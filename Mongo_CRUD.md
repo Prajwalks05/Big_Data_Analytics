@@ -237,6 +237,7 @@ Atlas atlas-ryqrm6-shard-0 [primary] socialmedia> db.Creators.find().pretty()
 ]
 ```
 ### Insert to ADS table
+```
 Atlas atlas-ryqrm6-shard-0 [primary] socialmedia> db.Ads.insertMany([
 ...  {Ad_ID:"A001", Creator_ID:"C101", Page_ID:"P001", Likes:150, Shares:50, Comments:30, Page_Visits:1200, Ad_Date:new Date("2026-01-01"), Revenue:2500.50},
 ...  {Ad_ID:"A002", Creator_ID:"C102", Page_ID:"P002", Likes:200, Shares:80, Comments:45, Page_Visits:1800, Ad_Date:new Date("2026-01-01"), Revenue:4000.00},
