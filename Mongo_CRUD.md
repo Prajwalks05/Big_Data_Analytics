@@ -1,3 +1,5 @@
+####Operations done on Lab 1
+```
 Microsoft Windows [Version 10.0.26100.7623]
 (c) Microsoft Corporation. All rights reserved.
 
@@ -768,3 +770,4 @@ Atlas atlas-ryqrm6-shard-0 [primary] socialmedia> db.Ads.aggregate([
   { _id: 'Twitter', Total_Visits: 1500 }
 ]
 Atlas atlas-ryqrm6-shard-0 [primary] socialmedia>Quey Completed
+```
