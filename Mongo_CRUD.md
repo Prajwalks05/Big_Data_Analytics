@@ -795,3 +795,36 @@ Atlas atlas-ryqrm6-shard-0 [primary] socialmedia> db.Ads.aggregate([
 ]
 Atlas atlas-ryqrm6-shard-0 [primary] socialmedia>Quey Completed
 ```
+## Some update and delete commands
+```
+Atlas atlas-ryqrm6-shard-0 [primary] socialmedia> db.Creators.updateOne(
+...   { Creator_ID: "C101" },
+...   { $set: { Platform: "Instagram" } }
+... )
+...
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-ryqrm6-shard-0 [primary] socialmedia> db.Ads.updateOne(
+...   { Ad_ID: "A202" },
+...   { $inc: { Page_Visits: 100 } }
+... )
+...
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-ryqrm6-shard-0 [primary] socialmedia> db.Ads.deleteOne(
+...   { Ad_ID: "A203" }
+... )
+...
+{ acknowledged: true, deletedCount: 0 }
+Atlas atlas-ryqrm6-shard-0 [primary] socialmedia>
+```
