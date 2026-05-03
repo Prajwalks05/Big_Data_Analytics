@@ -10,7 +10,6 @@ public class MeanMaxMapper extends Mapper < LongWritable, Text, Text, IntWritabl
     throws IOException,
     InterruptedException {
         String line = value.toString();
-        21 | P a g e
         // Extract month from positions 19-20
         String month = line.substring(19, 21);
         int temperature;
